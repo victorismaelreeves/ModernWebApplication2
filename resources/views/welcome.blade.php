@@ -79,27 +79,31 @@
             <!--Main-->
             <main class="bg-white-300 flex-1 p-3 overflow-hidden">
                 <div class="flex flex-col">
-                    @foreach($response as $currency)
-                    <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{$currency['logo_url']}}" style="width: 75px; margin: 10px auto;">
-                            <div class="card-body">
-                                <div class="card-title">{{$currency["currency"]}}</div>
-                                <div class="card-text"> style="margin: 5px;> Name: {{$currency['name']}}</div>
-                                <div class="card-text"> style="margin: 5px;> Price: &#8364; {{$currency['price']}}</div>
-                                <div class="card-text"> style="margin: 5px;> Circulating Supply: {{$currency['circulating_supply']}}</div>
-                                <div class="card-text"> style="margin: 5px;> Market Cap: {{$currency['market_cap']}}</div>
+                    <div class="container-lg" style= "margin:0 auto;">
+                        <div class= "row at -5">
+                            @foreach($response as $currency)
+                            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-3">
+                                <div class="card" style="width: 7rem;">
+                                    <img src="{{$currency['logo_url']}}" style="width: 75px; margin: 10px auto;">
+                                    <div class="card-body">
+                                        <div class="card-title"> {{$currency['currency']}}</div>
+                                        <div class="card-text" style="margin: 5px;"> Name: {{$currency['name']}}</div>
+                                        <div class="card-text" style="margin: 5px;"> Price: &#8364; {{$currency['price']}}</div>
+                                        <div class="card-text" style="margin: 5px;"> Circulating Supply: {{$currency['circulating_supply']}}</div>
+                                        <div class="card-text" style="margin: 5px;"> Market Cap: {{$currency['market_cap']}}</div>
+                                    </div>
+                                </div>
                             </div>
+                             @endforeach
                         </div>
                     </div>
-                    @endforeach
                 </div>
             </main>
             <!--/Main-->
         </div>
         <!--Footer-->
         <footer class="bg-grey-darkest text-white p-2">
-            <div class="flex flex-1 mx-auto">Made by:  <a href="https://therichpost.com/" target=" _blank">Victor-Ismael Reeves</a></div>
+            <div class="flex flex-1 mx-auto">Made by:   <a href="https://therichpost.com/" target=" _blank">Victor-Ismael Reeves</a></div>
         </footer>
         <!--/footer-->
     </div>
