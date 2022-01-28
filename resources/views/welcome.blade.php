@@ -70,6 +70,13 @@
                                     <span><i class="fa fa-angle-right float-right"></i></span>
                                 </a>
                             </li>
+                            <li class="border-t border-light-border w-full h-full px-2 py-3">
+                                <a href="/choices"
+                                   class="mx-4 font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
+                                    Choices
+                                    <span><i class="fa fa-angle-right float-right"></i></span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

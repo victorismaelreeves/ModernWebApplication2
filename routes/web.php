@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [CryptoController::class, 'getData']);
 
+Route::get('/choices', [CryptoController::class, 'getData2']);
+
 Route::get('/login', function () {
     return view('login');
 });
